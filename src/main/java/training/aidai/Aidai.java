@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class Aidai {
     private String name;
-    private int age;
+    private int age1;
 
     public Aidai(String name, int age) {
         this.name = name;
-        this.age = age;
+        this.age1 = age;
     }
 
     public String getName() {
@@ -20,11 +20,11 @@ public class Aidai {
     }
 
     public int getAge() {
-        return age;
+        return age1;
     }
 
     public void setAge(int age) {
-        this.age = age;
+        this.age1 = age;
     }
 
     @Override
@@ -32,19 +32,19 @@ public class Aidai {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Aidai aidai = (Aidai) o;
-        return age == aidai.age && Objects.equals(name, aidai.name);
+        return age1 == aidai.age1 && Objects.equals(name, aidai.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age);
+        return Objects.hash(name, age1);
     }
 
     @Override
     public String toString() {
         return "Aidai{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", age=" + age1 +
                 '}';
     }
 }
